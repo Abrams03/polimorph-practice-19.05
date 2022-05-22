@@ -1,6 +1,6 @@
 package specs;
 
-public class PassengerCar extends Vehicle {
+public class PassengerCar extends Vehicle{
     int countWheels = 4;
 
     public PassengerCar(String model, int speed, int fuel, boolean isDieselFuel) {
@@ -12,30 +12,34 @@ public class PassengerCar extends Vehicle {
         System.out.println(countWheels);
     }
 
+    public String toString(){
+        return "Это легковой автомобиль модели " + getModel();
+    }
 
-    private void checkFuel() {
+    /*private void checkFuel() {
         if (getFuel() > 100 || getFuel() < 0) {
             return;
         }
         System.out.println("Читар");
-    }
+    }*/
     void GetModel() {
         System.out.println(getModel());
     }
-    public void drive() {
+    void drive() {
         if(getFuel() == 0) {
             System.out.println("Бак пуст");
             return;
         }else
         System.out.println("Транспорт поехал");
-        System.out.println("Комфортно стоим в пробке");
     }
-    public void stop() {
+    void stop() {
         System.out.println("Транспорт остановился");
         System.out.println("....Плавно.....");
     }
 
 }
+
+
 
 
 
