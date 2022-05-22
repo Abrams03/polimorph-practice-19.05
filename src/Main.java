@@ -1,19 +1,16 @@
-import specs.SUV;
-import specs.PassengerCar;
-import specs.Motorcycle;
-import specs.Vehicle;
-import specs.TransportSorter;
+import specs.*;
 
 public class Main {
 
 
         public static void main(String[] args) {
-            Vehicle passengerCar1 = new PassengerCar("Лада", 60, -10, true);
-            Vehicle suv1 = new SUV("Hummer", 85, false, -10);
-            Vehicle motorcycle1 = new Motorcycle("Harley Davidson", 80, 100, false);
-            Vehicle passengerCar2 = new PassengerCar("Lamborghini", 180, 60, false);
+            Vehicle passengerCar1 = new PassengerCar("Лада", 60, 20, true);
+            Vehicle suv1 = new SUV("Hummer", 85, false, 50);
+            Vehicle flyingCar1 = new FlyingCar("DeLorian", 350, 80, false);
+            Vehicle plane1 = new Plane("CRJ200", 670, 95, false);
 
-           Vehicle[] vehicles = {passengerCar1, suv1, motorcycle1, passengerCar2};
+
+           Vehicle[] vehicles = {passengerCar1, suv1, flyingCar1, plane1};
 
             TransportSorter ts = new TransportSorter(vehicles);
             ts.print();

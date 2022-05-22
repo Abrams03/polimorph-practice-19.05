@@ -1,6 +1,6 @@
 package specs;
 
-public class Vehicle {
+abstract public class Vehicle {
     private String model;
     private int speed;
     private int fuel;

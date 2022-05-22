@@ -5,11 +5,14 @@ public class Motorcycle extends Vehicle {
 
     public Motorcycle(String model, int speed, int fuel, boolean isDieselFuel) {
         super(model, speed, fuel, isDieselFuel);
-        this.countWheels = countWheels;
     }
 /////////////////////////////////////////////////////////////////
     void wheels() {
         System.out.println(countWheels);
+    }
+
+    public String toString(){
+        return "Это мотоцикл модели " + getModel();
     }
 
 

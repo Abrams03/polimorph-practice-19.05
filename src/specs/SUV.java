@@ -11,6 +11,9 @@ public class SUV extends Vehicle{
         System.out.println(countWheels);
     }
 
+    public String toString(){
+        return "Это джип модели " + getModel();
+    }
 
     private void checkFuel() {
         if (getFuel() > 100 || getFuel() < 0) {
